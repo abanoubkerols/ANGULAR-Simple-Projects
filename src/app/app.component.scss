@@ -1,0 +1,14 @@
+:host {
+    display: grid;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .active {
+    border-bottom: 2px solid white;
+  }
+  li{
+    cursor: pointer;
+  }

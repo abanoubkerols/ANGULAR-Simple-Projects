@@ -1,0 +1,24 @@
+<h1>Components</h1>
+
+<app-card [iconClasses]="'fa-info-circle'" [title]="'Loader'" [subTitle]="'Loader component'">
+  <app-loader body [isLoading]="false"></app-loader>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'star'" [subTitle]="'star  Component'">
+  <app-star body [rating]="1.6"></app-star>
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'progress bar'" [subTitle]="'progress bar Component'">
+  <app-progress-bar body [value]="progressBarVal"></app-progress-bar>
+  <button footer (click)="progressBarVal  = 95"> update </button>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'accordion'" [subTitle]="'accordion Component'">
+  <app-accordion body [items]="accordionItems"></app-accordion>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Card'" [subTitle]="'Card Component'">
+  <p body>Body Content</p>
+  <p footer>footer</p>
+</app-card>
