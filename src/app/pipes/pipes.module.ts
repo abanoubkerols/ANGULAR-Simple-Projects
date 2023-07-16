@@ -1,5 +1,5 @@
 import { PipeDocumentationComponent } from './pipe-documentation/pipe-documentation.component';
-import { Pipes_Routes } from './pipe-documentation/pipes.rout';
+import { Pipes_Routes } from './pipes.rout';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';

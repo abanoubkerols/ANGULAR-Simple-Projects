@@ -12,6 +12,7 @@
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'progress bar'" [subTitle]="'progress bar Component'">
   <app-progress-bar body [value]="progressBarVal"></app-progress-bar>
   <button footer (click)="progressBarVal  = 95"> update </button>
+  <button footer (click)="progressBarVal  = 0"> reset </button>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'accordion'" [subTitle]="'accordion Component'">

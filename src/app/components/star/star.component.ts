@@ -7,14 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class StarComponent implements OnInit {
 
-  @Input() public rating = 5
+  @Input()  rating = 5
   constructor() { }
 
   ngOnInit(): void {
   }
 
 
-  get fullstar(): number[] {
+  get fullStar(): number[] {
     const totalFullStar = Math.floor(this.rating)
     return Array(totalFullStar)
   }

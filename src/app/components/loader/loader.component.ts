@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LoaderComponent implements OnInit {
 
-  @Input() public isLoading =false 
+  @Input()  isLoading =false 
 
   constructor() { }
 
