@@ -1,3 +1,4 @@
+import { loaderType } from './../loader/models/loader-type-enum';
 import { Component, OnInit } from '@angular/core';
 import { AccordionItem } from '../accordion/accordion-item.interface';
 
@@ -29,5 +30,6 @@ export class ComponentDocumentationComponent implements OnInit {
 
 
   public progressBarVal = 25 
+  loaderType =  loaderType.Loading
 
 }

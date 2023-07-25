@@ -1,7 +1,39 @@
 <h1>Components</h1>
 
-<app-card [iconClasses]="'fa-info-circle'" [title]="'Loader'" [subTitle]="'Loader component'">
-  <app-loader body [isLoading]="false"></app-loader>
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Modal'" [subTitle]="'Components'">
+  <div body>
+    <app-model [title]="'Modal Example'" #modal>
+      <p>Some Content</p>
+    </app-model>
+  </div>
+
+  <div footer>
+    <button (click)="modal.open()">Call Modal</button>
+  </div>
+</app-card>
+
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'LinkedIn Post'" [subTitle]="'Components'">
+  <app-linked-in-post body></app-linked-in-post>
+</app-card>
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Twitter Post'" [subTitle]="'Components'">
+  <app-twitter-post body></app-twitter-post>
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Credit Card Input'" [subTitle]="'Components'">
+  <div body>
+    <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="false"></app-credit-card-input>
+    <br>
+    <app-credit-card-input [creditCardNumber]="'4321432143214321'" [isReadOnly]="true"></app-credit-card-input>
+  </div>
+</app-card>
+
+
+<app-card [iconClasses]="'fas fa-info-circle'" [title]="'Loader'" [subTitle]="'Loader component'">
+  <app-loader body [isLoading]="false" [loaderType]="loaderType"></app-loader>
 </app-card>
 
 <app-card [iconClasses]="'fas fa-info-circle'" [title]="'star'" [subTitle]="'star  Component'">

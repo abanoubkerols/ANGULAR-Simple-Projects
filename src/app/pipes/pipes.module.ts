@@ -4,13 +4,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TruncatePipe } from './truncate/truncate.pipe';
+import {CreditCardFormatterPipe} from './credit-card-formatter/credit-card-formatter.pipe';
+import { FlattenPipe } from './Flatten/flatten.pipe'
+
+
 
 
 
 @NgModule({
   declarations: [
     PipeDocumentationComponent,
-    TruncatePipe
+    TruncatePipe,
+    CreditCardFormatterPipe,
+    FlattenPipe
 
 
   

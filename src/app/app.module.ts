@@ -13,6 +13,11 @@ import { ComponentDocumentationComponent } from './components/component-document
 import { ServiceDocumentationComponent } from './services/service-documentation/service-documentation.component';
 import { DirectiveDocumentationComponent } from './directives/directive-documentation/directive-documentation.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CreditCardInputComponent } from './components/credit-card-input/credit-card-input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TwitterPostComponent } from './components/twitter-post/twitter-post.component';
+import { LinkedInPostComponent } from './components/linked-in-post/linked-in-post.component';
+import { AppModelComponent } from './components/app-model/app-model.component';
 
 
 @NgModule({
@@ -29,11 +34,17 @@ import { LoaderComponent } from './components/loader/loader.component';
     ServiceDocumentationComponent,
     DirectiveDocumentationComponent,
     LoaderComponent,
+    CreditCardInputComponent,
+    TwitterPostComponent,
+    LinkedInPostComponent,
+    AppModelComponent,
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
